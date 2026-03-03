@@ -19,7 +19,8 @@ Instead of relying on AI "good behavior," Ghost Shield intercepts file-read requ
 * **Tactical Alert:** Emergency notification dispatched via **AWS SNS** directly to the executive.
 
 ### 2. Financial Circuit Breaker (Anti-Hallucination)
-Prevents **"Token Burn Loops"**—where an agent enters an infinite loop of expensive calls. 
+* Prevents **"Token Burn Loops"**—where an agent enters an infinite loop of expensive calls.
+* The **Financial Circuit Breaker** also acts as a defense against **'Security Obsession'**—preventing the AI from entering a high-cost reasoning loop while trying to bypass security perimeters.
 * **Hard-Kill:** If the agent exceeds the defined "Blast Radius" (e.g., 5 consecutive actions), the system executes an immediate shutdown.
 * **Financial Alert:** Dispatches a specific notification for budget protection.
 
